@@ -1,0 +1,115 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2933;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 794px;
+  min-width: 578px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-box {
+  width: 370px;
+  height: 326px;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 8px 15px 0 #1414141f, 0 0 4px 0 #1414141a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.page-box h1 {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 42px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.checkbox-row:hover {
+  background: #f5f3ff;
+}
+
+.checkbox-row span {
+  flex: 1;
+  text-align: left;
+}
+
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #6366f1;
+  margin-left: auto;
+}
+
+button {
+  margin: 2px;
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  background: #ffce22;
+  color: #1f2933;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #ffd84d;
+}
+
+button:active {
+  background: #f5c400;
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(99, 102, 241, 0.6);
+  outline-offset: 2px;
+}
